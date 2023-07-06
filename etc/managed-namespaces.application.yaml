@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: managed-namespaces/overlays
-    repoURL: 'https://github.com/REPLACE_THIS/rht-summit-2023-gitops-cluster-mgmt'
+    repoURL: 'https://github.com/jmendoza1234/rht-summit-2023-gitops-cluster-mgmt'
     targetRevision: HEAD
   project: default
   syncPolicy:
