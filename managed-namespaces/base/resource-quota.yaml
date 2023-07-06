@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: resource-quota-memory-cpu
+  namespace: for-replacement
+  annotations:
+    # Ensures that this resource will be applied after the namespace
+    argocd.argoproj.io/sync-wave: "0"
+spec:
+  # Default to half a CPU core and half a GB of memory
+  hard:
+    cpu: "500m"
+    memory: 512Mi
+  scopes:
+  - NotTerminating
